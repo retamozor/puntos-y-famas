@@ -1,0 +1,128 @@
+.gamepad {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  background-color: var(--primary-3);
+  border-top: 2px solid #0000001f;
+  overflow: hidden;
+  border-radius: 2rem 2rem 0 0;
+  padding: .5rem 1rem;
+}
+
+.numeros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: .5rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.numero {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 0.7rem;
+  background-color: var(--primary-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.botones button:hover {
+  background-color: #8d8d8d5d;
+}
+
+.botones button {
+  cursor: pointer;
+  background-color: #00000000;
+  border-radius: 0.7rem;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.digito {
+  position: relative;
+}
+
+.digito::after {
+  position: absolute;
+  content: "";
+  background: greenyellow;
+  color: black;
+  font-size: 0.5em;
+  font-weight: 500;
+  bottom: -0.2em;
+  right: -0.2em;
+  width: 1em;
+  aspect-ratio: 1/1;
+  border-radius: 100vh;
+  line-height: 1em;
+  text-align: center;
+
+}
+
+.no-digito {
+  position: relative;
+}
+
+.no-digito::after {
+  position: absolute;
+  content: "";
+  background: crimson;
+  color: white;
+  font-size: 0.5em;
+  bottom: -0.2em;
+  right: -0.2em;
+  width: 1em;
+  aspect-ratio: 1/1;
+  border-radius: 100vh;
+  line-height: 1em;
+  text-align: center;
+
+}
+
+.acciones {
+  display: flex;
+  gap: .5rem;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid #0000001f;
+  width: 100%;
+  justify-content: center;
+}
+
+.acciones button {
+  border-radius: 100vh;
+}
+
+.accion {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 100vh;
+  background-color: var(--primary-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: light) {
+  .botones button {
+    color: white;
+  }
+}

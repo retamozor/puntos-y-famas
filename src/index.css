@@ -1,0 +1,42 @@
+:root {
+  font-family: 'Kanit', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #161A2A;
+  --primary-1: #161A2A;
+  --primary-2: #323A57;
+  --primary-3: #242940;
+  --primary-4: #181E39;
+  --primary-5: #151D41;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.color-primary-0 { color: #161A2A }	/* Main Primary color */
+.color-primary-1 { color: #323A57 }
+.color-primary-2 { color: #242940 }
+.color-primary-3 { color: #181E39 }
+.color-primary-4 { color: #151D41 }
+
+button {
+  font-family: 'Kanit', sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #C6CBE1;
+    --primary-1: #C6CBE1;
+    --primary-2: #7F8AB5;
+    --primary-3: #A3ABCD;
+    --primary-4: #606DA1;
+    --primary-5: #44538D;
+  }
+}

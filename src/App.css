@@ -1,0 +1,50 @@
+.App{
+  padding-top: 2rem;
+}
+
+.App * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgba(127, 255, 212, 0.158); */
+  /* outline: 1px solid rgba(115, 255, 0, 0.164); */
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.num {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #a1a1a149;
+  border-radius: 0.5em;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.historico {
+  height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.punto-fama {
+  position: absolute;
+  left: 120%;
+  font-size: 1.5rem;
+  width: 5rem
+}
+
+@media (hover: none) {
+  .num {
+    font-size: 1.2rem;
+  }
+}
